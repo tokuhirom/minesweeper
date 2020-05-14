@@ -9,7 +9,6 @@ describe('Matrix', function() {
   })
   it('get edge node', () => {
     const b = new minesweeper.Matrix(10, 8, () => new minesweeper.Cell(0.9))
-    console.log(b.getCell(0,0) instanceof minesweeper.Cell)
     assert( b.getCell(0, 0) instanceof minesweeper.Cell)
     assert( b.getCell(9, 7) instanceof minesweeper.Cell)
   })
